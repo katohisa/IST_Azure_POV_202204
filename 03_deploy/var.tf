@@ -1,13 +1,17 @@
 # target resource group
 variable "rg_name" {
-  default = "prod"
+  default = "prod-2"
   type    = string
 }
 
 # Image Resource Group
 variable "src_rg_name" {
-  default = "winrg"
+  default = "stg"
   type    = string
+}
+# prefix
+variable "prefix" {
+  default = "prod"
 }
 
 # location
@@ -18,7 +22,7 @@ variable "location" {
 
 # image name
 variable "image_name" {
-  default = "stagevm-image-20220407205207"
+  default = "prodvm-image"
   type    = string
 }
 

@@ -12,9 +12,7 @@ provider "azurerm" {
   # Configuration options
 }
 
-variable "prefix" {
-  default = "web"
-}
+
 
 resource "azurerm_resource_group" "main" {
   name     = var.rg_name
